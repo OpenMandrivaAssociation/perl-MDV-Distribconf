@@ -1,5 +1,5 @@
 %define dist	MDV-Distribconf
-%define version	3.07
+%define version	3.08
 %define release	%mkrel 1
 
 Summary:	Read and write config of a Mandriva Linux distribution tree
