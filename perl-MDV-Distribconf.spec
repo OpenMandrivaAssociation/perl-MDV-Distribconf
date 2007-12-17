@@ -10,7 +10,6 @@ License:	GPL
 Group:		Development/Perl
 Source0:	%{dist}-%{version}.tar.gz
 Url:		http://search.cpan.org/dist/%{dist}/
-BuildRoot:	%{_tmppath}/%{name}-buildroot/
 BuildArch:	noarch
 BuildRequires:	perl perl-Config-IniFiles perl-MDV-Packdrakeng
 BuildRequires:  perl(RPM4)
