@@ -1,6 +1,6 @@
 %define dist	MDV-Distribconf
 %define version	4.00
-%define release	%mkrel 2
+%define release	%mkrel 3
 
 Summary:	Read and write config of a Mandriva Linux distribution tree
 Name:		perl-%{dist}
