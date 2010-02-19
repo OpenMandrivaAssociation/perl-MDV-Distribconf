@@ -13,7 +13,6 @@ Url:		http://search.cpan.org/dist/%{dist}/
 BuildRoot:	%{_tmppath}/%{name}-buildroot/
 BuildArch:	noarch
 BuildRequires:	perl perl-Config-IniFiles perl-MDV-Packdrakeng
-BuildRequires:  perl(RPM4)
 
 %description
 MDV::Distribconf is a module to get/write the configuration of a Mandriva Linux
