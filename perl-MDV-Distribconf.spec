@@ -8,7 +8,6 @@ License:	GPL
 Group:		Development/Perl
 Source0:	%{dist}-%{version}.tar.xz
 Url:		http://search.cpan.org/dist/%{dist}/
-BuildRoot:	%{_tmppath}/%{name}-buildroot/
 BuildArch:	noarch
 BuildRequires:	perl perl-Config-IniFiles perl-MDV-Packdrakeng
 
@@ -16,11 +15,11 @@ BuildRequires:	perl perl-Config-IniFiles perl-MDV-Packdrakeng
 MDV::Distribconf is a module to get/write the configuration of a Mandriva Linux
 distribution tree.
 
-%package -n mdv-distrib-tools
-Summary: Tools use to maintains Mandriva distrib tree
-Group: Development/Perl
+%package -n	mdv-distrib-tools
+Summary:	Tools use to maintains Mandriva distrib tree
+Group:		Development/Perl
 
-%description -n mdv-distrib-tools
+%description -n	mdv-distrib-tools
 Tools use to maintains Mandriva distrib tree.
 
 This include:
@@ -38,22 +37,15 @@ This include:
 %{__make} test
 
 %install
-rm -rf $RPM_BUILD_ROOT
 %makeinstall_std
 
-%clean
-rm -rf $RPM_BUILD_ROOT
-
 %files
-%defattr(-,root,root)
 %doc ChangeLog
 %{_mandir}/*/MDV::Distribconf.*
 %dir %{perl_vendorlib}/MDV/Distribconf
 %{perl_vendorlib}/MDV/Distribconf.pm
 
 %files -n mdv-distrib-tools
-%defattr(-,root,root)
-%_bindir/*
+%{_bindir}/*
 %{perl_vendorlib}/MDV/Distribconf/*
 %{_mandir}/*/MDV::Distribconf::*
-
