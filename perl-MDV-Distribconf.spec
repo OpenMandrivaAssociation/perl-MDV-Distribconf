@@ -1,14 +1,12 @@
 %define dist	MDV-Distribconf
-%define version	4.02
-%define release	%mkrel 2
 
 Summary:	Read and write config of a Mandriva Linux distribution tree
 Name:		perl-%{dist}
-Version:	%{version}
-Release:	%{release}
+Version:	4.03
+Release:	1
 License:	GPL
 Group:		Development/Perl
-Source0:	%{dist}-%{version}.tar.gz
+Source0:	%{dist}-%{version}.tar.xz
 Url:		http://search.cpan.org/dist/%{dist}/
 BuildRoot:	%{_tmppath}/%{name}-buildroot/
 BuildArch:	noarch
