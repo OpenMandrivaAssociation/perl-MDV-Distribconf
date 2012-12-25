@@ -3,14 +3,16 @@
 Summary:	Read and write config of a Mandriva Linux distribution tree
 Name:		perl-%{dist}
 Version:	4.03
-Release:	5
+Release:	6
 License:	GPLv2+
 Group:		Development/Perl
 Source0:	%{dist}-%{version}.tar.xz
 Url:		http://search.cpan.org/dist/%{dist}/
 BuildArch:	noarch
-BuildRequires:	perl perl-Config-IniFiles perl-MDV-Packdrakeng
-BuildRequires:  perl-devel
+BuildRequires:	perl
+BuildRequires:	perl-Config-IniFiles
+BuildRequires:	perl-MDV-Packdrakeng
+BuildRequires:	perl-devel
 
 %description
 MDV::Distribconf is a module to get/write the configuration of a Mandriva Linux
@@ -32,10 +34,10 @@ This include:
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
-%{__make}
+%make
 
 %check
-%{__make} test
+make test
 
 %install
 %makeinstall_std
