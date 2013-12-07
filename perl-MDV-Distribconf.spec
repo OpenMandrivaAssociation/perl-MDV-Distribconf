@@ -3,7 +3,7 @@
 Summary:	Read and write config of a Mandriva Linux distribution tree
 Name:		perl-%{dist}
 Version:	4.03
-Release:	10
+Release:	11
 License:	GPLv2+
 Group:		Development/Perl
 Source0:	%{dist}-%{version}.tar.xz
