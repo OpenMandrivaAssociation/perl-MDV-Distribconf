@@ -31,26 +31,26 @@ This include:
 - checkdistrib
 
 %prep
-%setup -qn %{dist}-%{version}
+%autosetup -p1 -n %{dist}-%{version}
 
 %build
-%__perl Makefile.PL INSTALLDIRS=vendor
-%make
+perl Makefile.PL INSTALLDIRS=vendor
+%make_build
 
 %check
 make test
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc ChangeLog
 %dir %{perl_vendorlib}/MDV/Distribconf
 %{perl_vendorlib}/MDV/Distribconf.pm
-%{_mandir}/man3/MDV::Distribconf.*
+%doc %{_mandir}/man3/MDV::Distribconf.*
 
 %files -n mdv-distrib-tools
 %{_bindir}/*
 %{perl_vendorlib}/MDV/Distribconf/*
-%{_mandir}/man3/MDV::Distribconf::*
+%doc %{_mandir}/man3/MDV::Distribconf::*
 
