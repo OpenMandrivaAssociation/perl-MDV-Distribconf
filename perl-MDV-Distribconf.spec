@@ -7,7 +7,7 @@ Release:	19
 License:	GPLv2+
 Group:		Development/Perl
 Source0:	%{dist}-%{version}.tar.xz
-Url:		http://search.cpan.org/dist/%{dist}/
+Url:		https://search.cpan.org/dist/%{dist}/
 BuildArch:	noarch
 BuildRequires:	perl(Test::More)
 BuildRequires:	perl
