@@ -9,6 +9,7 @@ Group:		Development/Perl
 Source0:	%{dist}-%{version}.tar.xz
 Url:		https://search.cpan.org/dist/%{dist}/
 BuildArch:	noarch
+BuildRequires:	make
 BuildRequires:	perl(Test::More)
 BuildRequires:	perl
 BuildRequires:	perl-Config-IniFiles
